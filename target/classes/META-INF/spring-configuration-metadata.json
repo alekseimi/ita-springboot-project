@@ -1,0 +1,19 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "ita.springboot.application.model.Storage.StorageProperties",
+      "name": "storage",
+      "type": "ita.springboot.application.model.Storage.StorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "ita.springboot.application.model.Storage.StorageProperties",
+      "defaultValue": "upload-directory",
+      "name": "storage.location",
+      "description": "Folder location for storing files",
+      "type": "java.lang.String"
+    }
+  ]
+}

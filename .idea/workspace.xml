@@ -1,0 +1,1263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="67827460-b8d8-49fb-99dc-15861e917692" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ita-project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_1_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_197.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_json_path_3_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_rest_assured_3_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_rest_assured_common_3_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_xml_path_3_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_46.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ccil_cowan_tagsoup_tagsoup_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_2_4_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_2_4_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_encog_encog_core_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_17_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_11_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_passay_passay_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_0_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_springsecurity4_3_0_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bootstrap_3_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/config/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/exception/StorageException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/ActivationFunctionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/DataNormalization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/NNetFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/PredictionResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/service/FileStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/validation/EmailValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/validation/PasswordConstraintValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/validation/ValidEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/validation/ValidPassword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/web/FileUploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/failure.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fileupload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ita/springboot/application/ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ita/springboot/application/fileUploadTests/FileUploadIntegrationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ita/springboot/application/fileUploadTests/FileUploadServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ita/springboot/application/fileUploadTests/testupload.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ita/springboot/application/modelTests/DataFacadeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ita/springboot/application/repositoryTest/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ita/springboot/application/validationTests/EmailValidatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ita/springboot/application/validationTests/FieldMatchValidatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ita/springboot/application/validationTests/PasswordValidatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/iris.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/testFile.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/registration-login-springboot-security-thymeleaf.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/config/CorsFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/config/SecurityConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/exception/StorageException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/model/ActivationFunctionType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/model/DataNormalization.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/model/NNetFacade$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/model/NNetFacade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/model/PredictionResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/model/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/repository/PredictionResultRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/repository/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/service/FileStorageService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/service/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/validation/EmailValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/validation/FieldMatch$List.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/validation/FieldMatch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/validation/FieldMatchValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/validation/PasswordConstraintValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/validation/ValidEmail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/validation/ValidPassword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/web/FileUploadController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/web/MainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/web/UserRegistrationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ita/springboot/application/web/dto/UserRegistrationDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/failure.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/fileupload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/registration-login-springboot-security-thymeleaf.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ita/springboot/application/ApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ita/springboot/application/fileUploadTests/FileUploadIntegrationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ita/springboot/application/fileUploadTests/FileUploadServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ita/springboot/application/modelTests/DataFacadeTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ita/springboot/application/repositoryTest/UserTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ita/springboot/application/validationTests/EmailValidatorTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ita/springboot/application/validationTests/FieldMatchValidatorTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ita/springboot/application/validationTests/PasswordValidatorTest$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ita/springboot/application/validationTests/PasswordValidatorTest$PasswordConstraintValidatorClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ita/springboot/application/validationTests/PasswordValidatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/springsecurity/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/springsecurity/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/springsecurity/constraint/FieldMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/validation/FieldMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/springsecurity/constraint/FieldMatchValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/validation/FieldMatchValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/springsecurity/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/springsecurity/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/springsecurity/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/springsecurity/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/springsecurity/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/springsecurity/web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/web/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/springsecurity/web/UserRegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/web/UserRegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/javaguides/springboot/springsecurity/web/dto/UserRegistrationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ita/springboot/application/web/dto/UserRegistrationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/javaguides/springboot/springsecurity/ApplicationTests.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/validation/EmailValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/validation/FieldMatch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/validation/PasswordConstraintValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/validation/ValidEmail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/web/UserRegistrationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="759">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#730#731#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/validation/ValidPassword.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/web/FileUploadController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#896#897#0" expanded="true" />
+                <element signature="e#938#939#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/web/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#562#563#0" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/web/dto/UserRegistrationDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>context</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/PredictionResult.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ita/springboot/application/modelTests/nnetTest.java" />
+        <option value="$PROJECT_DIR$/src/test/testFile" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/NNetConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/NNet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/ActivationFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/ActivationFunctionEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/DataSetDetails.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ita/springboot/application/modelTests/NnetTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/NNetFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/DataNormalization.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/NNetFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/repository/PredictionResultRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/service/StorageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/config/StorageProperties.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/service/NNetService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/web/dto/DataSetDetailsDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/Storage/StorageException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/Storage/StorageFileNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/service/FileSystemStorageService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ita/springboot/application/modelTests/storageTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/resources/testupload.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/uploadForm.html" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/model/Storage/StorageProperties.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/exception/StorageException.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/failure.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fileUpload.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/config/CorsFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/config/SecurityConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/service/FileStorageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/web/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/web/UserRegistrationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ita/springboot/application/web/FileUploadController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ita/springboot/application/modelTests/DataFacadeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ita/springboot/application/repositoryTest/UserTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ita/springboot/application/serviceTests/fileUploadServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/fileUploadTests/FileUploadServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ita/springboot/application/serviceTests/FileUploadServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ita/springboot/application/fileUploadTests/FileUploadINtegrationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ita/springboot/application/serviceTests/FileSystemStorageServiceTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ita/springboot/application/fileUploadTests/FileUploadServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/FileUploadIntegrationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ita/springboot/application/FileUploadIntegrationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ita/springboot/application/fileUploadTests/FileUploadIntegrationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fileupload.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/registration.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/success.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="282" />
+    <option name="y" value="-11" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="fileUploadTests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="modelTests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="repositoryTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="registration-login-springboot-security-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="registration-login-springboot-security-thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="validationTests" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/ita/springboot/application" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings sdk-home="C:\Users\Aleksej-PC\Anaconda3\python.exe">
+        <option name="mySdkHome" value="C:\Users\Aleksej-PC\Anaconda3\python.exe" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Šola\registration-login-springboot-security-thymeleaf\src\test\java\resources" />
+      <recent name="E:\Šola\registration-login-springboot-security-thymeleaf\src\test\java\ita\springboot\application\fileUploadTests" />
+      <recent name="E:\Šola\registration-login-springboot-security-thymeleaf\src\test" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ita.springboot.application" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Šola\registration-login-springboot-security-thymeleaf\src\test\java\ita\springboot\application" />
+      <recent name="E:\Šola\registration-login-springboot-security-thymeleaf\src\test\java\ita\springboot\application\fileUploadTests" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+    <option name="contentProportion" value="0.4015837" />
+  </component>
+  <component name="RunManager" selected="JUnit.FileUploadIntegrationTests">
+    <configuration name="FileUploadIntegrationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ita-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ita.springboot.application.fileUploadTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ita.springboot.application.fileUploadTests" />
+      <option name="MAIN_CLASS_NAME" value="ita.springboot.application.fileUploadTests.FileUploadIntegrationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileUploadIntegrationTests.shouldUploadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ita-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ita.springboot.application.fileUploadTests" />
+      <option name="MAIN_CLASS_NAME" value="ita.springboot.application.fileUploadTests.FileUploadIntegrationTests" />
+      <option name="METHOD_NAME" value="shouldUploadFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileUploadServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ita-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ita.springboot.application.fileUploadTests" />
+      <option name="MAIN_CLASS_NAME" value="ita.springboot.application.fileUploadTests.FileUploadServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileUploadServiceTest.shouldFailMissingFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ita-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ita.springboot.application.fileUploadTests" />
+      <option name="MAIN_CLASS_NAME" value="ita.springboot.application.fileUploadTests.FileUploadServiceTest" />
+      <option name="METHOD_NAME" value="shouldFailMissingFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileUploadServiceTest.shouldFailUpload_EmptyFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ita-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ita.springboot.application.fileUploadTests" />
+      <option name="MAIN_CLASS_NAME" value="ita.springboot.application.fileUploadTests.FileUploadServiceTest" />
+      <option name="METHOD_NAME" value="shouldFailUpload_EmptyFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ita-project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ita.springboot.application.Application" />
+      <option name="URL_PATH" value="/registration" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FileUploadIntegrationTests" />
+        <item itemvalue="JUnit.FileUploadIntegrationTests.shouldUploadFile" />
+        <item itemvalue="JUnit.FileUploadServiceTest.shouldFailUpload_EmptyFile" />
+        <item itemvalue="JUnit.FileUploadServiceTest.shouldFailMissingFile" />
+        <item itemvalue="JUnit.FileUploadServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="67827460-b8d8-49fb-99dc-15861e917692" name="Default Changelist" comment="" />
+      <created>1555079957507</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555079957507</updated>
+      <workItem from="1555079959403" duration="1043000" />
+      <workItem from="1555082267950" duration="408000" />
+      <workItem from="1555082890768" duration="116000" />
+      <workItem from="1555181986673" duration="3714000" />
+      <workItem from="1555259387447" duration="20178000" />
+      <workItem from="1555317414553" duration="13255000" />
+      <workItem from="1555406788092" duration="28090000" />
+      <workItem from="1555500337295" duration="30708000" />
+      <workItem from="1555578508714" duration="16330000" />
+      <workItem from="1555601664607" duration="3231000" />
+      <workItem from="1555604922675" duration="1556000" />
+      <workItem from="1555607090424" duration="266000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="FileUploadIntegrationTests_shouldUploadFile - 2019.04.18 at 17h 51m 20s.xml">
+      <configuration name="FileUploadIntegrationTests.shouldUploadFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileUploadIntegrationTests_shouldUploadFile - 2019.04.18 at 17h 52m 19s.xml">
+      <configuration name="FileUploadIntegrationTests.shouldUploadFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileUploadIntegrationTests_shouldUploadFile - 2019.04.18 at 17h 52m 50s.xml">
+      <configuration name="FileUploadIntegrationTests.shouldUploadFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileUploadIntegrationTests_shouldUploadFile - 2019.04.18 at 17h 53m 52s.xml">
+      <configuration name="FileUploadIntegrationTests.shouldUploadFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileUploadIntegrationTests_shouldUploadFile - 2019.04.18 at 17h 58m 09s.xml">
+      <configuration name="FileUploadIntegrationTests.shouldUploadFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileUploadIntegrationTests_shouldUploadFile - 2019.04.18 at 17h 58m 35s.xml">
+      <configuration name="FileUploadIntegrationTests.shouldUploadFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileUploadIntegrationTests_shouldUploadFile - 2019.04.18 at 17h 59m 05s.xml">
+      <configuration name="FileUploadIntegrationTests.shouldUploadFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileUploadIntegrationTests - 2019.04.18 at 18h 08m 03s.xml">
+      <configuration name="FileUploadIntegrationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileUploadIntegrationTests - 2019.04.18 at 18h 09m 14s.xml">
+      <configuration name="FileUploadIntegrationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FileUploadIntegrationTests - 2019.04.18 at 18h 11m 22s.xml">
+      <configuration name="FileUploadIntegrationTests" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="118895000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49940264" visible="true" weight="0.3916849" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.50059736" side_tool="true" weight="0.39824945" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32528734" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5005807" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38709676" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32988507" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32988507" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32988507" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32988507" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.33333334" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32988507" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32988507" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.26881722" />
+      <window_info anchor="bottom" id="GitHub Pull Requests" order="16" weight="0.32988507" />
+      <window_info anchor="bottom" id="SVN Repositories" order="17" weight="0.32988507" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="SciView" order="6" weight="0.14696133" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="retrievedUser.password" />
+        <watch expression="response" />
+        <watch expression="file" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.7.RELEASE/spring-security-web-5.0.7.RELEASE.jar!/org/springframework/security/web/authentication/logout/LogoutFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.7.RELEASE/spring-security-web-5.0.7.RELEASE.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1495">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.7.RELEASE/spring-security-web-5.0.7.RELEASE.jar!/org/springframework/security/web/savedrequest/RequestCacheAwareFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.7.RELEASE/spring-security-web-5.0.7.RELEASE.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.7.RELEASE/spring-security-web-5.0.7.RELEASE.jar!/org/springframework/security/web/FilterChainProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="172" selection-start-line="172" selection-end-line="172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ita/springboot/application/ApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ita/springboot/application/validationTests/EmailValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-819">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ita/springboot/application/validationTests/FieldMatchValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-382">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ita/springboot/application/validationTests/PasswordValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ita/springboot/application/serviceTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/ita/springboot/application/serviceTests/FileSystemStorageServiceTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/ita/springboot/application/modelTests/DataFacadeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/resources/testupload.txt" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/resources/fileUploadTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/ita/springboot/application/testupload.txt" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/ita/springboot/application/fileUploadTests/FileUploadServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ita/springboot/application/fileUploadTests/FileUploadIntegrationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ita/springboot/application/fileUploadTests/testupload.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ita/springboot/application/repositoryTest/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1886">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/repository/PredictionResultRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/config/CorsFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/config/SecurityConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/exception/StorageException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/failure.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fileupload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="68" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/model/ActivationFunctionType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/model/DataNormalization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/model/NNetFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/model/PredictionResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/model/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/service/FileStorageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/validation/EmailValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/validation/FieldMatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/validation/PasswordConstraintValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/validation/ValidEmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/web/UserRegistrationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/validation/ValidPassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/web/FileUploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#938#939#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/web/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/web/dto/UserRegistrationDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ita/springboot/application/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
