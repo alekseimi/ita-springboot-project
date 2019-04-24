@@ -28,6 +28,9 @@
 				<ul class="nav navbar-nav">
 					<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
 				</ul>
+				<ul class="nav navbar-nav">
+					<li><a th:href="@{/fileupload}">Upload a file</a></li>
+				</ul>
 			</div>
 		</div>
 	</nav>

@@ -14,7 +14,7 @@ import java.nio.file.StandardCopyOption;
 @Service
 public class FileStorageService {
 
-    private String path="e:\\uploads\\";
+    private String path="c:\\uploads\\";
 
     public void uploadFile(MultipartFile file){
         if (file.isEmpty()){
