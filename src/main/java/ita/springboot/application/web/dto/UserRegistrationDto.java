@@ -1,7 +1,5 @@
 package ita.springboot.application.web.dto;
 
-import javax.validation.constraints.AssertTrue;
-import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 
 import ita.springboot.application.validation.FieldMatch;

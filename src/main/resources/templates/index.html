@@ -26,10 +26,13 @@
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
+					<li><a th:href="@{/fileupload}">Upload a file</a></li>
 				</ul>
 				<ul class="nav navbar-nav">
-					<li><a th:href="@{/fileupload}">Upload a file</a></li>
+					<li><a th:href="@{/nnetsettings}">New model</a></li>
+				</ul>
+				<ul class="nav navbar-nav">
+					<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
 				</ul>
 			</div>
 		</div>
@@ -43,12 +46,14 @@
 		<p>
 			Welcome <span sec:authentication="principal.username">User</span>
 		</p>
+		<p>
+			Use the navigation bar to upload a file or create a new artificial neural network!
+		</p>
 	</div>
 
 	<script type="text/javascript"
 		th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
 	<script type="text/javascript"
 		th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
-
 </body>
 </html>
