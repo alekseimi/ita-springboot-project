@@ -41,12 +41,87 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <h1></h1>
-            <form th:action="@{/nnetsettings}" method="post" enctype="multipart/form-data">
-                <div class="form-group">
-                    <input type="file" name="file">
+            <form th:action="@{/nnetsettings}" th:object="${nnsettings}" method="post">
+                <p class="error-message" th:if="${#fields.hasGlobalErrors()}"
+                   th:each="error : ${#fields.errors('global')}" th:text="${error}">Validation
+                    error</p>
+
+                <div class="form-group"
+                     th:classappend="${#fields.hasErrors('activationType')}? 'has-error':''">
+                    <label for="activationType" class="control-label">Activation type:</label>
+                    <select id="activationType" th:field="*{activationType}">
+                        <option th:value="BiPolar" th:text="BiPolar"></option>
+                        <option th:value="BipolarSteepenedSigmoid" th:text="BipolarSteepenedSigmoid"></option>
+                        <option th:value="ClippedLinear" th:text="ClippedLinear"></option>
+                        <option th:value="Competitive" th:text="Competitive"></option>
+                        <option th:value="Elliott" th:text="Elliott"></option>
+                        <option th:value="ElliottSymmetric" th:text="ElliottSymmetric"></option>
+                        <option th:value="Gaussian" th:text="Gaussian"></option>
+                        <option th:value="Linear" th:text="Linear"></option>
+                        <option th:value="LOG" th:text="LOG"></option>
+                        <option th:value="Ramp" th:text="Ramp"></option>
+                        <option th:value="Step" th:text="Step"></option>
+                    </select>
+                    <p class="error-message"
+                       th:each="error: ${#fields.errors('activationType')}"
+                       th:text="${error}">Validation error</p>
                 </div>
+
+                <div class="form-group"
+                     th:classappend="${#fields.hasErrors('trainingType')}? 'has-error':''">
+                    <label for="trainingType" class="control-label">Training type:</label>
+                    <select id="trainingType" th:field="*{trainingType}">
+                        <option th:value="Backpropagation" th:text="Backpropagation"></option>
+                        <option th:value="QuickPropagation" th:text="QuickPropagation"></option>
+                        <option th:value="ManhattanPropagation" th:text="ManhattanPropagation"></option>
+                    </select>
+                    <p class="error-message"
+                       th:each="error: ${#fields.errors('trainingType')}"
+                       th:text="${error}">Validation error</p>
+                </div>
+
+
+                <div class="form-group"
+                     th:classappend="${#fields.hasErrors('epochsCount')}? 'has-error':''">
+                    <label for="epochsCount" class="control-label">Epoch count(3):</label> <input
+                        id="epochsCount" class="form-control" th:field="*{epochsCount}"/>
+                    <p class="error-message"
+                       th:each="error: ${#fields.errors('epochsCount')}"
+                       th:text="${error}">Validation error</p>
+                </div>
+
+                <div class="form-group"
+                     th:classappend="${#fields.hasErrors('iterationCount')}? 'has-error':''">
+                    <label for="iterationCount" class="control-label">Iteration count(1):</label> <input
+                        id="iterationCount" class="form-control" th:field="*{iterationCount}"/>
+                    <p class="error-message"
+                       th:each="error: ${#fields.errors('iterationCount')}"
+                       th:text="${error}">Validation error</p>
+                </div>
+
+
+                <div class="form-group"
+                     th:classappend="${#fields.hasErrors('hiddenLayerCount')}? 'has-error':''">
+                    <label for="hiddenLayerCount" class="control-label">Hidden layer count(1-3):</label> <input
+                        id="hiddenLayerCount" th:value="50" value="50" class="form-control"
+                        th:field="*{hiddenLayerCount}">
+                    <p class="error-message"
+                       th:each="error: ${#fields.errors('hiddenLayerCount')}"
+                       th:text="${error}">Validation error</p>
+                </div>
+
+                <div class="form-group"
+                     th:classappend="${#fields.hasErrors('hiddenLayerNeuronCount')}? 'has-error':''">
+                    <label for="hiddenLayerNeuronCount" class="control-label">Hidden layer neuron
+                        count(100-200):</label> <input
+                        id="hiddenLayerNeuronCount" class="form-control" th:field="*{hiddenLayerNeuronCount}"/>
+                    <p class="error-message"
+                       th:each="error: ${#fields.errors('hiddenLayerNeuronCount')}"
+                       th:text="${error}">Validation error</p>
+                </div>
+
                 <div class="form-group">
-                    <button type="submit" class="btn btn-success">Upload</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
                 </div>
             </form>
         </div>

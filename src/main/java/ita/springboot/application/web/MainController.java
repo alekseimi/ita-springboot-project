@@ -26,7 +26,6 @@ public class MainController {
     public String showSuccessPage(){
         return "success";
     }
-
     @GetMapping("/failure")
     public String showFailurePage(){
         return "failure";

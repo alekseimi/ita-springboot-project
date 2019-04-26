@@ -1,93 +1,85 @@
 package ita.springboot.application.web.dto;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 
 public class NNetSettingsDto {
 
     @NotNull
-    @Size(min = 1, max = 200)
-    private Integer iterationsCount;
+    private String activationType;
 
     @NotNull
-    @Size(min = 5, max = 100)
+    private String trainingType;
+
+    @NotNull
+    @Min(1)
+    @Max(3)
+    private Integer iterationCount;
+
+    @NotNull
+    @Min(3)
+    @Max(5)
     private Integer epochsCount;
 
     @NotNull
-    @Size(min = 50, max = 100)
-    private Integer minHiddenLayerNeuronCount;
+    @Min(1)
+    @Max(3)
+    private Integer hiddenLayerCount;
 
     @NotNull
-    @Size(min = 100, max = 200)
-    private Integer maxHiddenLayerNeuronCount;
-
-    @NotNull
-    @Size(min = 50, max = 100)
-    private Integer hiddenLayerNeuronCountStep;
-
-    @NotEmpty
-    @Size(min = 1, max = 2)
-    private Integer minHiddenLayerCount;
-
-    @NotEmpty
-    @Size(min = 2)
-    private Integer maxHiddenLayerCount;
+    private Integer hiddenLayerNeuronCount;
 
 
-    public Integer getIterationsCount() {
-        return iterationsCount;
+    public String getActivationType() {
+        return activationType;
     }
 
-    public void setIterationsCount(Integer iterationsCount) {
-        this.iterationsCount = iterationsCount;
+    public NNetSettingsDto setActivationType(String activationType) {
+        this.activationType = activationType;
+        return this;
+    }
+
+    public String getTrainingType() {
+        return trainingType;
+    }
+
+    public NNetSettingsDto setTrainingType(String trainingType) {
+        this.trainingType = trainingType;
+        return this;
+    }
+
+    public Integer getIterationCount() {
+        return iterationCount;
+    }
+
+    public NNetSettingsDto setIterationCount(Integer iterationCount) {
+        this.iterationCount = iterationCount;
+        return this;
     }
 
     public Integer getEpochsCount() {
         return epochsCount;
     }
 
-    public void setEpochsCount(Integer epochsCount) {
+    public NNetSettingsDto setEpochsCount(Integer epochsCount) {
         this.epochsCount = epochsCount;
+        return this;
     }
 
-    public Integer getMinHiddenLayerNeuronCount() {
-        return minHiddenLayerNeuronCount;
+    public Integer getHiddenLayerCount() {
+        return hiddenLayerCount;
     }
 
-    public void setMinHiddenLayerNeuronCount(Integer minHiddenLayerNeuronCount) {
-        this.minHiddenLayerNeuronCount = minHiddenLayerNeuronCount;
+    public NNetSettingsDto setHiddenLayerCount(Integer hiddenLayerCount) {
+        this.hiddenLayerCount = hiddenLayerCount;
+        return this;
     }
 
-    public Integer getMaxHiddenLayerNeuronCount() {
-        return maxHiddenLayerNeuronCount;
+    public Integer getHiddenLayerNeuronCount() {
+        return hiddenLayerNeuronCount;
     }
 
-    public void setMaxHiddenLayerNeuronCount(Integer maxHiddenLayerNeuronCount) {
-        this.maxHiddenLayerNeuronCount = maxHiddenLayerNeuronCount;
-    }
-
-    public Integer getHiddenLayerNeuronCountStep() {
-        return hiddenLayerNeuronCountStep;
-    }
-
-    public void setHiddenLayerNeuronCountStep(Integer hiddenLayerNeuronCountStep) {
-        this.hiddenLayerNeuronCountStep = hiddenLayerNeuronCountStep;
-    }
-
-    public Integer getMinHiddenLayerCount() {
-        return minHiddenLayerCount;
-    }
-
-    public void setMinHiddenLayerCount(Integer minHiddenLayerCount) {
-        this.minHiddenLayerCount = minHiddenLayerCount;
-    }
-
-    public Integer getMaxHiddenLayerCount() {
-        return maxHiddenLayerCount;
-    }
-
-    public void setMaxHiddenLayerCount(Integer maxHiddenLayerCount) {
-        this.maxHiddenLayerCount = maxHiddenLayerCount;
+    public NNetSettingsDto setHiddenLayerNeuronCount(Integer hiddenLayerNeuronCount) {
+        this.hiddenLayerNeuronCount = hiddenLayerNeuronCount;
+        return this;
     }
 }

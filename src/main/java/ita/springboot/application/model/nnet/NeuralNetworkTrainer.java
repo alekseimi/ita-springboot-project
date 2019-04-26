@@ -87,7 +87,9 @@ public class NeuralNetworkTrainer {
         this.neuralNetworkError = neuralNetworkError;
     }
 
-    public void train() throws IOException {
+     /*
+
+         public void train() throws IOException {
         int inputSize = trainingSet.get(0).getInputArray().length;
         int outputSize = trainingSet.get(0).getIdealArray().length;
 
@@ -102,7 +104,10 @@ public class NeuralNetworkTrainer {
         }
     }
 
-    private void train(int inputSize, int outputSize, String trainingType, String activationType, int hiddenLayersCount, int hiddenLayerNeuronCount) throws IOException {
+   */
+
+
+    public void train(int inputSize, int outputSize, int epochsCount, String trainingType, String activationType, int hiddenLayersCount, int hiddenLayerNeuronCount) throws IOException {
         long elapsedSum = 0;
         double validationErrorSum = 0;
         double classificationErrorSum = 0;
@@ -147,8 +152,8 @@ public class NeuralNetworkTrainer {
     private BasicNetwork trainNetwork(
             int inputSize, int outputSize, String trainingType, String activationType, int hiddenLayersCount, int hiddenLayerNeuronsCount) throws IOException {
         BasicNetwork network = new BasicNetwork();
-
         network.addLayer(new BasicLayer(null, true, inputSize));
+
 
         final ActivationFunction activationFunction = new ActivationFunctionFactory().create(activationType);
 
