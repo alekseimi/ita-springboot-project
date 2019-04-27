@@ -1,5 +1,6 @@
 package ita.springboot.application.model.nnet;
 
+import ita.springboot.application.model.NNetResults;
 import org.encog.engine.network.activation.ActivationFunction;
 import org.encog.ml.data.MLData;
 import org.encog.ml.data.MLDataPair;
@@ -29,6 +30,7 @@ public class NeuralNetworkTrainer {
 
     private int minHiddenLayerCount = 2;
     private int maxHiddenLayerCount = 2;
+
 
     private BasicNetwork bestNetwork;
     private double bestError = Double.MAX_VALUE;
@@ -106,8 +108,8 @@ public class NeuralNetworkTrainer {
 
    */
 
-
-    public void train(int inputSize, int outputSize, int epochsCount, String trainingType, String activationType, int hiddenLayersCount, int hiddenLayerNeuronCount) throws IOException {
+    public NNetResults train(int inputSize, int outputSize, int iterationsCount, int epochsCount,
+                             String trainingType, String activationType, int hiddenLayersCount, int hiddenLayerNeuronCount) throws IOException {
         long elapsedSum = 0;
         double validationErrorSum = 0;
         double classificationErrorSum = 0;
@@ -115,7 +117,7 @@ public class NeuralNetworkTrainer {
         for (int i = 1; i <= iterationsCount; i++) {
             long start = System.currentTimeMillis();
 
-            BasicNetwork network = trainNetwork(inputSize, outputSize, trainingType, activationType, hiddenLayersCount, hiddenLayerNeuronCount);
+            BasicNetwork network = trainNetwork(inputSize, outputSize, epochsCount, trainingType, activationType, hiddenLayersCount, hiddenLayerNeuronCount);
             ErrorRate validationError = calculateError(validationSet, network);
 
             validationErrorSum += validationError.NeuralNetworkErrorRate;
@@ -137,6 +139,7 @@ public class NeuralNetworkTrainer {
         long averageElapsed = elapsedSum / iterationsCount;
         double averageClassificationError = classificationErrorSum / iterationsCount;
 
+
         System.out.println(
                 trainingType + "," +
                 activationType + "," +
@@ -147,10 +150,16 @@ public class NeuralNetworkTrainer {
                 averageElapsed + "," +
                 iterationsCount + "," +
                 averageClassificationError);
+
+        NNetResults nNetResults = new NNetResults(trainingType, activationType,
+                epochsCount, iterationsCount,
+                hiddenLayersCount, hiddenLayerNeuronCount,
+                averageValidationError, averageElapsed, averageClassificationError);
+        return nNetResults;
     }
 
     private BasicNetwork trainNetwork(
-            int inputSize, int outputSize, String trainingType, String activationType, int hiddenLayersCount, int hiddenLayerNeuronsCount) throws IOException {
+            int inputSize, int outputSize, int epochsCount, String trainingType, String activationType, int hiddenLayersCount, int hiddenLayerNeuronsCount) throws IOException {
         BasicNetwork network = new BasicNetwork();
         network.addLayer(new BasicLayer(null, true, inputSize));
 

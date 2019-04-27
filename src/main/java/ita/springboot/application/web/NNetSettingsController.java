@@ -1,6 +1,7 @@
 package ita.springboot.application.web;
 
 
+import ita.springboot.application.model.NNetResults;
 import ita.springboot.application.service.NNetService;
 import ita.springboot.application.service.NNetServiceImpl;
 import ita.springboot.application.web.dto.NNetSettingsDto;
@@ -37,9 +38,8 @@ public class NNetSettingsController {
     public String createNeuralNetwork(@ModelAttribute("nnsettings") @Valid NNetSettingsDto nNetSettingsDto,
                                       BindingResult result) {
 
-
-        BasicNetwork bestNetwork = nNetService.createNNetModel(nNetSettingsDto);
-        System.out.println(bestNetwork);
+        NNetResults nNetResults = nNetService.createNNetModel(nNetSettingsDto);
+        System.out.println(nNetResults);
 
         return null;
     }

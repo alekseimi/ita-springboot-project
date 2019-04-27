@@ -1,5 +1,6 @@
 package ita.springboot.application.model.nnet;
 
+import ita.springboot.application.model.NNetResults;
 import ita.springboot.application.web.dto.NNetSettingsDto;
 import org.encog.Encog;
 import org.encog.ml.data.MLDataSet;
@@ -32,7 +33,7 @@ public class HandwrittenNN {
     private int hiddenLayerCount;
     private int hiddenLayerNeuronCount;
 
-    public BasicNetwork createModel() throws IOException, InvalidFileFormatException {
+    public NNetResults createModel() throws IOException, InvalidFileFormatException {
         NeuralNetworkTrainer trainer = createNeuralNetworkTrainer();
         /*
         MLDataSet trainingSet = getDataSet("C:\\Users\\Aleksej\\Documents\\MNIST\\train-labels.idx1-ubyte",
@@ -54,10 +55,10 @@ public class HandwrittenNN {
         int inputSize = trainingSet.get(0).getInputArray().length;
         int outputSize = trainingSet.get(0).getIdealArray().length;
 
-        trainer.train(inputSize, outputSize, epochsCount, trainingType, activationType, hiddenLayerCount, hiddenLayerNeuronCount);
-        BasicNetwork network = trainer.getBestNetwork();
+        NNetResults nNetResults = trainer.train(inputSize, outputSize, iterationsCount, epochsCount, trainingType, activationType, hiddenLayerCount, hiddenLayerNeuronCount);
+        // BasicNetwork network = trainer.getBestNetwork();
         Encog.getInstance().shutdown();
-        return network;
+        return nNetResults;
     }
 
     public NeuralNetworkTrainer createNeuralNetworkTrainer() {
@@ -132,10 +133,6 @@ public class HandwrittenNN {
         return this;
     }
 }
-
-
-
-
     /*
 
 

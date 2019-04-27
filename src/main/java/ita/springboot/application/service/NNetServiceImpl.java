@@ -1,5 +1,6 @@
 package ita.springboot.application.service;
 
+import ita.springboot.application.model.NNetResults;
 import ita.springboot.application.model.nnet.HandwrittenNN;
 import ita.springboot.application.model.nnet.InvalidFileFormatException;
 import ita.springboot.application.web.dto.NNetSettingsDto;
@@ -7,13 +8,14 @@ import org.encog.neural.networks.BasicNetwork;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 
 @Service
 public class NNetServiceImpl implements NNetService {
 
     @Override
-    public BasicNetwork createNNetModel(NNetSettingsDto nNetSettingsDto) {
+    public NNetResults createNNetModel(NNetSettingsDto nNetSettingsDto) {
 
         HandwrittenNN handwrittenNN = new HandwrittenNN();
         handwrittenNN.setEpochsCount(nNetSettingsDto.getEpochsCount())
@@ -23,7 +25,8 @@ public class NNetServiceImpl implements NNetService {
                 .setHiddenLayerCount(nNetSettingsDto.getHiddenLayerCount())
                 .setHiddenLayerNeuronCount(nNetSettingsDto.getHiddenLayerNeuronCount());
         try {
-            return handwrittenNN.createModel();
+            NNetResults nNetResults = handwrittenNN.createModel();
+            return nNetResults;
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InvalidFileFormatException e) {
