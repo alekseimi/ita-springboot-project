@@ -1,6 +1,6 @@
 package ita.springboot.application.model.nnet;
 
-import ita.springboot.application.model.NNetResults;
+import ita.springboot.application.model.NNetResult;
 import ita.springboot.application.web.dto.NNetSettingsDto;
 import org.encog.Encog;
 import org.encog.ml.data.MLDataSet;
@@ -33,29 +33,30 @@ public class HandwrittenNN {
     private int hiddenLayerCount;
     private int hiddenLayerNeuronCount;
 
-    public NNetResults createModel() throws IOException, InvalidFileFormatException {
+    public NNetResult createModel() throws IOException, InvalidFileFormatException {
         NeuralNetworkTrainer trainer = createNeuralNetworkTrainer();
-        /*
+
         MLDataSet trainingSet = getDataSet("C:\\Users\\Aleksej\\Documents\\MNIST\\train-labels.idx1-ubyte",
                 "C:\\Users\\Aleksej\\Documents\\MNIST\\train-images.idx3-ubyte");
         MLDataSet validationSet = getDataSet("C:\\Users\\Aleksej\\Documents\\MNIST\\t10k-labels.idx1-ubyte",
                 "C:\\Users\\Aleksej\\Documents\\MNIST\\t10k-images.idx3-ubyte");
 
-         D:\MNIST\
 
-         */
+
+        /*
         MLDataSet trainingSet = getDataSet("D:\\MNIST\\train-labels.idx1-ubyte",
                 "D:\\MNIST\\train-images.idx3-ubyte");
         MLDataSet validationSet = getDataSet("D:\\MNIST\\t10k-labels.idx1-ubyte",
                 "D:\\MNIST\\t10k-images.idx3-ubyte");
 
+         */
         trainer.setTrainingSet(trainingSet);
         trainer.setValidationSet(validationSet);
 
         int inputSize = trainingSet.get(0).getInputArray().length;
         int outputSize = trainingSet.get(0).getIdealArray().length;
 
-        NNetResults nNetResults = trainer.train(inputSize, outputSize, iterationsCount, epochsCount, trainingType, activationType, hiddenLayerCount, hiddenLayerNeuronCount);
+        NNetResult nNetResults = trainer.train(inputSize, outputSize, iterationsCount, epochsCount, trainingType, activationType, hiddenLayerCount, hiddenLayerNeuronCount);
         // BasicNetwork network = trainer.getBestNetwork();
         Encog.getInstance().shutdown();
         return nNetResults;

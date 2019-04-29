@@ -1,7 +1,11 @@
 package ita.springboot.application.model;
 
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
 import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(uniqueConstraints = @UniqueConstraint(columnNames = "email"))
@@ -24,6 +28,12 @@ public class User {
             inverseJoinColumns = @JoinColumn(
                     name = "role_id", referencedColumnName = "id"))
     private Collection<Role> roles;
+
+    @OneToMany(cascade = CascadeType.ALL,
+            fetch = FetchType.LAZY,
+            mappedBy = "user")
+    private Set<NNetResult> nNetResults = new HashSet<>();
+
 
     public User() {
     }
@@ -101,5 +111,13 @@ public class User {
                 ", password='" + "*********" + '\'' +
                 ", roles=" + roles +
                 '}';
+    }
+
+    public Set<NNetResult> getnNetResults() {
+        return nNetResults;
+    }
+
+    public void setnNetResults(Set<NNetResult> nNetResults) {
+        this.nNetResults = nNetResults;
     }
 }

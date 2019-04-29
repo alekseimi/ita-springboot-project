@@ -1,6 +1,6 @@
 package ita.springboot.application.model.nnet;
 
-import ita.springboot.application.model.NNetResults;
+import ita.springboot.application.model.NNetResult;
 import org.encog.engine.network.activation.ActivationFunction;
 import org.encog.ml.data.MLData;
 import org.encog.ml.data.MLDataPair;
@@ -8,11 +8,7 @@ import org.encog.ml.data.MLDataSet;
 import org.encog.neural.networks.BasicNetwork;
 import org.encog.neural.networks.layers.BasicLayer;
 import org.encog.neural.networks.training.propagation.Propagation;
-
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 public class NeuralNetworkTrainer {
     private String[] activationTypes = new String[] { "Elliott", "LOG", "Ramp", "Sigmoid", "SteepenedSigmoid" };
@@ -108,8 +104,8 @@ public class NeuralNetworkTrainer {
 
    */
 
-    public NNetResults train(int inputSize, int outputSize, int iterationsCount, int epochsCount,
-                             String trainingType, String activationType, int hiddenLayersCount, int hiddenLayerNeuronCount) throws IOException {
+    public NNetResult train(int inputSize, int outputSize, int iterationsCount, int epochsCount,
+                            String trainingType, String activationType, int hiddenLayersCount, int hiddenLayerNeuronCount) throws IOException {
         long elapsedSum = 0;
         double validationErrorSum = 0;
         double classificationErrorSum = 0;
@@ -151,7 +147,7 @@ public class NeuralNetworkTrainer {
                 iterationsCount + "," +
                 averageClassificationError);
 
-        NNetResults nNetResults = new NNetResults(trainingType, activationType,
+        NNetResult nNetResults = new NNetResult(trainingType, activationType,
                 epochsCount, iterationsCount,
                 hiddenLayersCount, hiddenLayerNeuronCount,
                 averageValidationError, averageElapsed, averageClassificationError);

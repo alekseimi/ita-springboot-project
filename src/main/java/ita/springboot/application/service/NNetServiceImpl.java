@@ -1,10 +1,17 @@
 package ita.springboot.application.service;
 
-import ita.springboot.application.model.NNetResults;
+import ita.springboot.application.model.NNetResult;
+import ita.springboot.application.model.User;
 import ita.springboot.application.model.nnet.HandwrittenNN;
 import ita.springboot.application.model.nnet.InvalidFileFormatException;
+import ita.springboot.application.repository.NNetResultsRepository;
+import ita.springboot.application.repository.UserRepository;
 import ita.springboot.application.web.dto.NNetSettingsDto;
 import org.encog.neural.networks.BasicNetwork;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -14,8 +21,14 @@ import java.util.ArrayList;
 @Service
 public class NNetServiceImpl implements NNetService {
 
+    @Autowired
+    UserRepository userRepository;
+
+    @Autowired
+    NNetResultsRepository nNetResultsRepository;
+
     @Override
-    public NNetResults createNNetModel(NNetSettingsDto nNetSettingsDto) {
+    public NNetResult createNNetModel(NNetSettingsDto nNetSettingsDto) {
 
         HandwrittenNN handwrittenNN = new HandwrittenNN();
         handwrittenNN.setEpochsCount(nNetSettingsDto.getEpochsCount())
@@ -25,7 +38,17 @@ public class NNetServiceImpl implements NNetService {
                 .setHiddenLayerCount(nNetSettingsDto.getHiddenLayerCount())
                 .setHiddenLayerNeuronCount(nNetSettingsDto.getHiddenLayerNeuronCount());
         try {
-            NNetResults nNetResults = handwrittenNN.createModel();
+            Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+            UserDetails userDetails = (UserDetails) auth.getPrincipal();
+
+            NNetResult nNetResults = handwrittenNN.createModel();
+            //milosevic.aleksej@gmail.com
+            User user = userRepository.findByEmail(userDetails.getUsername());
+            nNetResults.setUser(user);
+            user.getnNetResults().add(nNetResults);
+            userRepository.save(user);
+            System.out.println(user.getId());
+
             return nNetResults;
         } catch (IOException e) {
             e.printStackTrace();

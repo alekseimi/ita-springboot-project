@@ -7,8 +7,8 @@ import org.hibernate.annotations.OnDeleteAction;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "nnet_result")
-public class NNetResults {
+@Table(name = "nnet_results")
+public class NNetResult {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -38,7 +38,11 @@ public class NNetResults {
 
     private double averageClassificationError;
 
-    public NNetResults(String trainingType, String activationType, int epochsCount, int iterationsCount, int hiddenLayersCount,
+
+    public NNetResult() {
+    }
+
+    public NNetResult(String trainingType, String activationType, int epochsCount, int iterationsCount, int hiddenLayersCount,
                        int hiddenLayersNeuronCount, double averageValidationError,
                        double averageElapsed, double averageClassificationError) {
         this.trainingType = trainingType;
@@ -50,5 +54,13 @@ public class NNetResults {
         this.averageValidationError = averageValidationError;
         this.averageElapsed = averageElapsed;
         this.averageClassificationError = averageClassificationError;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }
