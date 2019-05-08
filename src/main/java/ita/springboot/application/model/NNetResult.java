@@ -63,4 +63,84 @@ public class NNetResult {
     public void setUser(User user) {
         this.user = user;
     }
+
+    public String getTrainingType() {
+        return trainingType;
+    }
+
+    public void setTrainingType(String trainingType) {
+        this.trainingType = trainingType;
+    }
+
+    public String getActivationType() {
+        return activationType;
+    }
+
+    public void setActivationType(String activationType) {
+        this.activationType = activationType;
+    }
+
+    public int getEpochsCount() {
+        return epochsCount;
+    }
+
+    public void setEpochsCount(int epochsCount) {
+        this.epochsCount = epochsCount;
+    }
+
+    public int getIterationsCount() {
+        return iterationsCount;
+    }
+
+    public void setIterationsCount(int iterationsCount) {
+        this.iterationsCount = iterationsCount;
+    }
+
+    public int getHiddenLayersCount() {
+        return hiddenLayersCount;
+    }
+
+    public void setHiddenLayersCount(int hiddenLayersCount) {
+        this.hiddenLayersCount = hiddenLayersCount;
+    }
+
+    public int getHiddenLayersNeuronCount() {
+        return hiddenLayersNeuronCount;
+    }
+
+    public void setHiddenLayersNeuronCount(int hiddenLayersNeuronCount) {
+        this.hiddenLayersNeuronCount = hiddenLayersNeuronCount;
+    }
+
+    public double getAverageValidationError() {
+        return averageValidationError;
+    }
+
+    public void setAverageValidationError(double averageValidationError) {
+        this.averageValidationError = averageValidationError;
+    }
+
+    public double getAverageElapsed() {
+        return averageElapsed;
+    }
+
+    public void setAverageElapsed(double averageElapsed) {
+        this.averageElapsed = averageElapsed;
+    }
+
+    public double getAverageClassificationError() {
+        return averageClassificationError;
+    }
+
+    public void setAverageClassificationError(double averageClassificationError) {
+        this.averageClassificationError = averageClassificationError;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

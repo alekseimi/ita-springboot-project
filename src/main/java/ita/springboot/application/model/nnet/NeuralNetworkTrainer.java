@@ -8,6 +8,8 @@ import org.encog.ml.data.MLDataSet;
 import org.encog.neural.networks.BasicNetwork;
 import org.encog.neural.networks.layers.BasicLayer;
 import org.encog.neural.networks.training.propagation.Propagation;
+
+import javax.persistence.Basic;
 import java.io.IOException;
 
 public class NeuralNetworkTrainer {
@@ -135,6 +137,11 @@ public class NeuralNetworkTrainer {
         long averageElapsed = elapsedSum / iterationsCount;
         double averageClassificationError = classificationErrorSum / iterationsCount;
 
+        displayTrainingProgress(iterationsCount, epochsCount, trainingType, activationType, hiddenLayersCount, hiddenLayerNeuronCount,
+                averageValidationError, averageElapsed, averageClassificationError);
+
+        /*
+
 
         System.out.println(
                 trainingType + "," +
@@ -147,6 +154,8 @@ public class NeuralNetworkTrainer {
                 iterationsCount + "," +
                 averageClassificationError);
 
+         */
+
         NNetResult nNetResults = new NNetResult(trainingType, activationType,
                 epochsCount, iterationsCount,
                 hiddenLayersCount, hiddenLayerNeuronCount,
@@ -154,8 +163,23 @@ public class NeuralNetworkTrainer {
         return nNetResults;
     }
 
+    private BasicNetwork buildNetwork(int inputSize, int outputSize, String activationType, int hiddenLayersCount, int hiddenLayerNeuronsCount) {
+        BasicNetwork network = new BasicNetwork();
+        network.addLayer(new BasicLayer(null, true, inputSize));
+        final ActivationFunction activationFunction = new ActivationFunctionFactory().create(activationType);
+        for (int i = 1; i <= hiddenLayersCount; i++) {
+            network.addLayer(new BasicLayer(activationFunction, true, hiddenLayerNeuronsCount));
+        }
+        network.addLayer(new BasicLayer(activationFunction, false, outputSize));
+        network.getStructure().finalizeStructure();
+        network.reset();
+        return network;
+    }
+
     private BasicNetwork trainNetwork(
             int inputSize, int outputSize, int epochsCount, String trainingType, String activationType, int hiddenLayersCount, int hiddenLayerNeuronsCount) throws IOException {
+
+        /*
         BasicNetwork network = new BasicNetwork();
         network.addLayer(new BasicLayer(null, true, inputSize));
 
@@ -169,7 +193,8 @@ public class NeuralNetworkTrainer {
         network.addLayer(new BasicLayer(activationFunction, false, outputSize));
         network.getStructure().finalizeStructure();
         network.reset();
-
+         */
+        BasicNetwork network = buildNetwork(inputSize, outputSize, activationType, hiddenLayersCount, hiddenLayerNeuronsCount);
         final Propagation train = new PropagationFactory().create(trainingType, network, trainingSet);
 
         for(int epoch = 1; epoch <= epochsCount; epoch++)
@@ -202,4 +227,23 @@ public class NeuralNetworkTrainer {
         errorRate.NeuralNetworkErrorRate = network.calculateError(validationSet);
         return errorRate;
     }
+
+
+    private void displayTrainingProgress(int iterationsCount, int epochsCount,
+                                         String trainingType, String activationType, int hiddenLayersCount, int hiddenLayerNeuronCount,
+                                         double averageValidationError, long averageElapsed, double averageClassificationError) {
+
+        System.out.println(
+                trainingType + "," +
+                        activationType + "," +
+                        hiddenLayersCount + "," +
+                        hiddenLayerNeuronCount + "," +
+                        epochsCount + "," +
+                        averageValidationError + "," +
+                        averageElapsed + "," +
+                        iterationsCount + "," +
+                        averageClassificationError + ",");
+
+    }
+
 }

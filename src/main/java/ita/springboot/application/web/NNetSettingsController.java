@@ -37,11 +37,7 @@ public class NNetSettingsController {
     @PostMapping
     public String createNeuralNetwork(@ModelAttribute("nnsettings") @Valid NNetSettingsDto nNetSettingsDto,
                                       BindingResult result) {
-
-        NNetResult nNetResults = nNetService.createNNetModel(nNetSettingsDto);
-        System.out.println(nNetResults);
-
-
-        return null;
+        nNetService.createNNetModel(nNetSettingsDto);
+        return "index";
     }
 }

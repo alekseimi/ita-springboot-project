@@ -16,7 +16,7 @@ import java.util.Arrays;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
-public class UserTest {
+public class UserRepoTest {
 
     @Autowired
     UserServiceImpl userService;

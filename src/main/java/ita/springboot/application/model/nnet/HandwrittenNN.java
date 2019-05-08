@@ -36,27 +36,30 @@ public class HandwrittenNN {
     public NNetResult createModel() throws IOException, InvalidFileFormatException {
         NeuralNetworkTrainer trainer = createNeuralNetworkTrainer();
 
+        /*
+
+
         MLDataSet trainingSet = getDataSet("C:\\Users\\Aleksej\\Documents\\MNIST\\train-labels.idx1-ubyte",
                 "C:\\Users\\Aleksej\\Documents\\MNIST\\train-images.idx3-ubyte");
         MLDataSet validationSet = getDataSet("C:\\Users\\Aleksej\\Documents\\MNIST\\t10k-labels.idx1-ubyte",
                 "C:\\Users\\Aleksej\\Documents\\MNIST\\t10k-images.idx3-ubyte");
+        */
 
 
 
-        /*
         MLDataSet trainingSet = getDataSet("D:\\MNIST\\train-labels.idx1-ubyte",
                 "D:\\MNIST\\train-images.idx3-ubyte");
         MLDataSet validationSet = getDataSet("D:\\MNIST\\t10k-labels.idx1-ubyte",
                 "D:\\MNIST\\t10k-images.idx3-ubyte");
 
-         */
         trainer.setTrainingSet(trainingSet);
         trainer.setValidationSet(validationSet);
 
         int inputSize = trainingSet.get(0).getInputArray().length;
         int outputSize = trainingSet.get(0).getIdealArray().length;
 
-        NNetResult nNetResults = trainer.train(inputSize, outputSize, iterationsCount, epochsCount, trainingType, activationType, hiddenLayerCount, hiddenLayerNeuronCount);
+        NNetResult nNetResults = trainer.train(inputSize, outputSize, iterationsCount,
+                epochsCount, trainingType, activationType, hiddenLayerCount, hiddenLayerNeuronCount);
         // BasicNetwork network = trainer.getBestNetwork();
         Encog.getInstance().shutdown();
         return nNetResults;
@@ -66,7 +69,6 @@ public class HandwrittenNN {
         NeuralNetworkTrainer trainer = new NeuralNetworkTrainer(new ClassificationError());
         return trainer;
     }
-
 
     public MLDataSet getDataSet(String labelsFileName, String imagesFileName) throws IOException, InvalidFileFormatException {
         MNISTReader mnistReader = new MNISTReader();

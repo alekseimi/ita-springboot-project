@@ -21,9 +21,4 @@ public class PredictionResult {
     @JsonIgnore
     private User user;
 
-
-
-
-
-
 }

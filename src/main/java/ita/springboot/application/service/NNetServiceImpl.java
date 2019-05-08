@@ -42,13 +42,12 @@ public class NNetServiceImpl implements NNetService {
             UserDetails userDetails = (UserDetails) auth.getPrincipal();
 
             NNetResult nNetResults = handwrittenNN.createModel();
+
             //milosevic.aleksej@gmail.com
             User user = userRepository.findByEmail(userDetails.getUsername());
             nNetResults.setUser(user);
             user.getnNetResults().add(nNetResults);
             userRepository.save(user);
-            System.out.println(user.getId());
-
             return nNetResults;
         } catch (IOException e) {
             e.printStackTrace();

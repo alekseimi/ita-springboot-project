@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" type="text/css"
+          th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"/>
+
+    <title>Artificial neural net settings</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" th:href="@{/}">Home</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li><a th:href="@{/index}">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div>
+    <div class="container">
+        <div th:switch="${nnetresults}">
+            <h2 th:case="null"> No results yet!</h2>
+            <div th:case="*">
+                <h2>Neural net settings</h2>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Training type</th>
+                        <th scope="col">Activation type</th>
+                        <th scope="col">Epoch count</th>
+                        <th scope="col">Iteration count</th>
+                        <th scope="col">Hidden layers count</th>
+                        <th scope="col">Neurons per hidden layer</th>
+                        <th scope="col">Average validation error</th>
+                        <th scope="col">Average elapsed training time</th>
+                        <th scope="col">Average classification error</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="nnetresult: ${nnetresults}">
+                        <td th:text="${nnetresult.trainingType}"></td>
+                        <td th:text="${nnetresult.activationType}"></td>
+                        <td th:text="${nnetresult.epochsCount}"></td>
+                        <td th:text="${nnetresult.iterationsCount}"></td>
+                        <td th:text="${nnetresult.hiddenLayersCount}"></td>
+                        <td th:text="${nnetresult.hiddenLayersNeuronCount}"></td>
+                        <td th:text="${nnetresult.averageValidationError}"></td>
+                        <td th:text="${nnetresult.averageElapsed}"></td>
+                        <td th:text="${nnetresult.averageClassificationError}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"
+        th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
+<script type="text/javascript"
+        th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+
+</body>
+</html>
