@@ -7,15 +7,12 @@ import ita.springboot.application.model.nnet.InvalidFileFormatException;
 import ita.springboot.application.repository.NNetResultsRepository;
 import ita.springboot.application.repository.UserRepository;
 import ita.springboot.application.web.dto.NNetSettingsDto;
-import org.encog.neural.networks.BasicNetwork;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
-
 import java.io.IOException;
-import java.util.ArrayList;
 
 
 @Service

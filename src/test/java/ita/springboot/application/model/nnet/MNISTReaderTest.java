@@ -16,6 +16,8 @@ public class MNISTReaderTest {
     private MNISTReader mnistReaderUnderTest;
 
 
+    /*
+    //Desktop
     final String imagesSourceTrain = "D:\\MNIST\\train-images.idx3-ubyte";
 
     final String labelsSourceTrain = "D:\\MNIST\\train-labels.idx1-ubyte";
@@ -24,8 +26,10 @@ public class MNISTReaderTest {
 
     final String labelsSourceValidation = "D:\\MNIST\\t10k-labels.idx1-ubyte";
 
+     */
 
-    /*
+
+
     final String imagesSourceTrain = "C:\\Users\\Aleksej\\Documents\\MNIST\\train-images.idx3-ubyte";
 
     final String labelsSourceTrain = "C:\\Users\\Aleksej\\Documents\\MNIST\\train-labels.idx1-ubyte";
@@ -33,7 +37,6 @@ public class MNISTReaderTest {
     final String imagesSourceValidation = "C:\\Users\\Aleksej\\Documents\\MNIST\\t10k-images.idx3-ubyte";
 
     final String labelsSourceValidation =  "C:\\Users\\Aleksej\\Documents\\MNIST\\t10k-labels.idx1-ubyte";
-    */
 
 
     @Before
