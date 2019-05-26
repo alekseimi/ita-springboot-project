@@ -13,6 +13,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -51,6 +53,10 @@ public class NNetResultsRepoTest {
         userRepository.save(user);
     }
 
+    @After
+    public void tearDown() {
+        userRepository.deleteAll();
+    }
     //LAZY INITIALIZATION ON NNETRESULTSs
     @Test(expected = LazyInitializationException.class)
     public void shouldFailWithLazyException() {
@@ -62,8 +68,8 @@ public class NNetResultsRepoTest {
     }
 
     @Test
-    public void retrieveResults() {
-        int expectedSetLength = 1;
+    public void retrieveResultsExpectedZero() {
+        int expectedSetLength = 0;
         helper.doInTransaction(entityManager -> {
             User newUser = userRepository.findByEmail(emailTest);
             assertEquals(expectedSetLength, newUser.getnNetResults().size());

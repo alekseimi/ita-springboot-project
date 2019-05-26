@@ -26,7 +26,6 @@ public class NNetSettingsListController {
     }
      */
 
-
     @GetMapping
     public String showSettingsList(Model model) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();

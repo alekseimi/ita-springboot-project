@@ -24,16 +24,6 @@ public class Application implements CommandLineRunner {
 	}
 	@Override
 	public void run(String... args){
-		User user = new User();
-
-		user.setEmail("alo@alo.com");
-		user.setFirstName("Janez");
-		user.setLastName("Novak");
-		user.setLastName("123");
-		user.setPassword("password");
-		user.setRoles(Arrays.asList(new Role("ROLE_ADMIN")));
-
-		userRepository.save(user);
 	}
 }
 

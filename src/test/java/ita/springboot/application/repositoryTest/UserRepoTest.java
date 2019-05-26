@@ -54,7 +54,7 @@ public class UserRepoTest {
         userRepository.save(user);
         userRepository.save(user1);
 
-        Assert.assertEquals(userRepository.count(), 2);
+        Assert.assertEquals(2, userRepository.count());
     }
 
     @Test
