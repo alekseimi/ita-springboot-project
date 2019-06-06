@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.Comparator;
 import java.util.List;
 
 @Controller
@@ -19,11 +20,12 @@ public class NNetSettingsRanks {
 
     @GetMapping
     public String showResultsList(Model model) {
-
-        List<NNetResult> nNetResultsRepositoryAll = nNetResultsRepository.findAll();
-
-        return null;
+        model.addAttribute("nnetresults", sortDBResults(nNetResultsRepository.findAll()));
+        return "nnresultsranks";
     }
 
-
+    public List<NNetResult> sortDBResults(List<NNetResult> listToSort) {
+        listToSort.sort(Comparator.comparing(NNetResult::getAverageClassificationError));
+        return listToSort;
+    }
 }

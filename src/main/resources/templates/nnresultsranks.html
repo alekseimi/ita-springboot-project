@@ -41,6 +41,8 @@
                 <table class="table">
                     <thead>
                     <tr>
+                        <th scope="col">Ranking</th>
+                        <th scope="col">First Name</th>
                         <th scope="col">Training type</th>
                         <th scope="col">Activation type</th>
                         <th scope="col">Epoch count</th>
@@ -53,7 +55,9 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr th:each="nnetresult: ${nnetresults}">
+                    <tr th:each="nnetresult, rankings: ${nnetresults}">
+                        <td th:text="${rankings.count}"></td>
+                        <td th:text="${nnetresult.getUser().getFirstName()}"></td>
                         <td th:text="${nnetresult.trainingType}"></td>
                         <td th:text="${nnetresult.activationType}"></td>
                         <td th:text="${nnetresult.epochsCount}"></td>

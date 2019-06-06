@@ -32,7 +32,10 @@
 					<li><a th:href="@{/nnetsettings}">New model</a></li>
 				</ul>
 				<ul class="nav navbar-nav">
-                    <li><a th:href="@{/nnresultslist}">Model list</a></li>
+                    <li><a th:href="@{/nnresultslist}">My models</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li><a th:href="@{/nnresultsranks}">Rankings</a></li>
                 </ul>
 				<ul class="nav navbar-nav">
 					<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
@@ -49,7 +52,7 @@
 			Welcome <span sec:authentication="principal.username">User</span>
 		</p>
 		<p>
-			Use the navigation bar to upload a file or create a new artificial neural network!
+            Create a new artificial neural network!
 		</p>
 	</div>
 

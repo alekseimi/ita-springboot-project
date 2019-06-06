@@ -20,9 +20,6 @@ public class FieldMatchValidatorTest {
 
     private static UserRegistrationDto userRegistrationDto;
 
-
-
-
     @BeforeClass
     public static void setUp(){
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();

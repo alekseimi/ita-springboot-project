@@ -21,10 +21,8 @@ public class ClassificationErrorTest {
         final double[] outputData = new double[]{0, 0};
         final double[] idealData = new double[]{1, 1};
         final double expectedResult = 0.0;
-
-        // Run the test
+        /* Run the test */
         final double result = classificationErrorUnderTest.getError(outputData, idealData);
-
         // Verify the results 
         assertEquals(expectedResult, result, 0.0001);
     }

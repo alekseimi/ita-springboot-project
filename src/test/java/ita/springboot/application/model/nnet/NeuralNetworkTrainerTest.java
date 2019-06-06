@@ -1,77 +1,103 @@
 package ita.springboot.application.model.nnet;
 
-import ita.springboot.application.model.NNetResult;
+import org.encog.engine.network.activation.ActivationBiPolar;
+import org.encog.engine.network.activation.ActivationLinear;
 import org.encog.neural.networks.BasicNetwork;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 
-import java.io.IOException;
-
+import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.Mockito.when;
-import static org.mockito.MockitoAnnotations.initMocks;
 
 public class NeuralNetworkTrainerTest {
 
-    public static double XOR_INPUT[][] = {{0.0, 0.0}, {1.0, 0.0},
-            {0.0, 1.0}, {1.0, 1.0}};
-    public static double XOR_IDEAL[][] = {{0.0, 0.0}, {1.0, 0.0},
-            {0.0, 1.0}, {1.0, 1.0}};
+    NeuralNetworkTrainer neuralNetworkTrainerUnderTest = new NeuralNetworkTrainer(new NeuralNetworkDummyError());
 
-    @Mock
-    private INeuralNetworkError mockNeuralNetworkError;
-
-    private NeuralNetworkTrainer neuralNetworkTrainerUnderTest;
-
-
-    @BeforeEach
-    private void setUp() {
-        initMocks(this);
-        neuralNetworkTrainerUnderTest = new NeuralNetworkTrainer(mockNeuralNetworkError);
+    @Test
+    public void expect_OK_when_activation_is_bipolar_testBuiltNetwork() {
+        int inputSize = 100;
+        int outputSize = 10;
+        int hiddenLayersCount = 1;
+        int hiddenLayerNeuronsCount = 100;
+        final String activationType = "BiPolar";
+        final int testedHiddenLayer = 1;
+        BasicNetwork networkUnderTest = neuralNetworkTrainerUnderTest.
+                buildNetwork(inputSize, outputSize, activationType, hiddenLayersCount, hiddenLayerNeuronsCount);
+        assertEquals(inputSize, networkUnderTest.getInputCount());
+        assertEquals(outputSize, networkUnderTest.getOutputCount());
+        assertTrue(networkUnderTest.getActivation(1) instanceof ActivationBiPolar);
+        assertEquals(hiddenLayersCount + 2, networkUnderTest.getLayerCount());
+        assertEquals(hiddenLayerNeuronsCount, networkUnderTest.getLayerNeuronCount(testedHiddenLayer));
     }
 
     @Test
-    public void testTrain() throws Exception {
-        // Setup
-        final int inputSize = 0;
-        final int outputSize = 0;
-        final int iterationsCount = 0;
-        final int epochsCount = 0;
-        final String trainingType = "trainingType";
-        final String activationType = "activationType";
-        final int hiddenLayersCount = 0;
-        final int hiddenLayerNeuronCount = 0;
-        final NNetResult expectedResult = null;
-        when(mockNeuralNetworkError.getError(new double[]{}, new double[]{})).thenReturn(0.0);
-
-        // Run the test
-        final NNetResult result = neuralNetworkTrainerUnderTest.train(inputSize, outputSize, iterationsCount, epochsCount, trainingType, activationType, hiddenLayersCount, hiddenLayerNeuronCount);
-
-        // Verify the results 
-        assertEquals(expectedResult, result);
+    public void expect_linear_when_activation_is_other_testBuiltNetwork() {
+        int inputSize = 100;
+        int outputSize = 10;
+        int hiddenLayersCount = 1;
+        int hiddenLayerNeuronsCount = 100;
+        final String activationType = "NonExistantActivation";
+        final int testedHiddenLayer = 1;
+        BasicNetwork networkUnderTest = neuralNetworkTrainerUnderTest.
+                buildNetwork(inputSize, outputSize, activationType, hiddenLayersCount, hiddenLayerNeuronsCount);
+        assertEquals(inputSize, networkUnderTest.getInputCount());
+        assertEquals(outputSize, networkUnderTest.getOutputCount());
+        assertTrue(networkUnderTest.getActivation(1) instanceof ActivationLinear);
+        assertEquals(hiddenLayersCount + 2, networkUnderTest.getLayerCount());
+        assertEquals(hiddenLayerNeuronsCount, networkUnderTest.getLayerNeuronCount(testedHiddenLayer));
+        ;
     }
 
-    @Test
-    public void testTrain_ThrowsIOException() throws Exception {
-        // Setup
-        final int inputSize = 0;
-        final int outputSize = 0;
-        final int iterationsCount = 0;
-        final int epochsCount = 0;
-        final String trainingType = "trainingType";
-        final String activationType = "activationType";
-        final int hiddenLayersCount = 0;
-        final int hiddenLayerNeuronCount = 0;
-        final NNetResult expectedResult = null;
-        when(mockNeuralNetworkError.getError(new double[]{}, new double[]{})).thenReturn(0.0);
 
-        // Run the test
-        assertThrows(IOException.class, () -> {
-            neuralNetworkTrainerUnderTest.train(inputSize, outputSize, iterationsCount, epochsCount, trainingType, activationType, hiddenLayersCount, hiddenLayerNeuronCount);
-        });
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void expect_error_when_inputSize_negative_testBuiltNetwork() {
+        int inputSize = -1;
+        int outputSize = 10;
+        int hiddenLayersCount = 1;
+        int hiddenLayerNeuronsCount = 100;
+        final String activationType = "NonExistantActivation";
+        neuralNetworkTrainerUnderTest.
+                buildNetwork(inputSize, outputSize, activationType, hiddenLayersCount, hiddenLayerNeuronsCount);
     }
 
+    @org.junit.Test(expected = IllegalArgumentException.class)
+    public void expect_error_when_outputSize_negative_testBuiltNetwork() {
+        int inputSize = 100;
+        int outputSize = -10;
+        int hiddenLayersCount = 1;
+        int hiddenLayerNeuronsCount = 100;
+        final String activationType = "NonExistantActivation";
+        neuralNetworkTrainerUnderTest.
+                buildNetwork(inputSize, outputSize, activationType, hiddenLayersCount, hiddenLayerNeuronsCount);
+    }
+
+    @org.junit.Test(expected = NegativeArraySizeException.class)
+    public void expect_error_when_hiddenLayerNeuronsCount_negative_testBuiltNetwork() {
+        int inputSize = 100;
+        int outputSize = 10;
+        int hiddenLayersCount = 2;
+        int hiddenLayerNeuronsCount = -1;
+        final String activationType = "NonExistantActivation";
+        neuralNetworkTrainerUnderTest.
+                buildNetwork(inputSize, outputSize, activationType, hiddenLayersCount, hiddenLayerNeuronsCount);
+    }
+
+    @org.junit.Test(expected = OutOfMemoryError.class)
+    public void expect_error_when_negative_testBuiltNetwork() {
+        int inputSize = 100;
+        int outputSize = 10;
+        int hiddenLayersCount = 999999999;
+        int hiddenLayerNeuronsCount = 999999;
+        final String activationType = "NonExistantActivation";
+        neuralNetworkTrainerUnderTest.
+                buildNetwork(inputSize, outputSize, activationType, hiddenLayersCount, hiddenLayerNeuronsCount);
+    }
+
+
+    private class NeuralNetworkDummyError implements INeuralNetworkError {
+        @Override
+        public double getError(double[] outputData, double[] idealData) {
+            return 0;
+        }
+    }
 
 }

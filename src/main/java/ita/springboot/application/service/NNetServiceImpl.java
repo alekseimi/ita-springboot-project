@@ -37,10 +37,7 @@ public class NNetServiceImpl implements NNetService {
         try {
             Authentication auth = SecurityContextHolder.getContext().getAuthentication();
             UserDetails userDetails = (UserDetails) auth.getPrincipal();
-
             NNetResult nNetResults = handwrittenNN.createModel();
-
-            //milosevic.aleksej@gmail.com
             User user = userRepository.findByEmail(userDetails.getUsername());
             nNetResults.setUser(user);
             user.getnNetResults().add(nNetResults);

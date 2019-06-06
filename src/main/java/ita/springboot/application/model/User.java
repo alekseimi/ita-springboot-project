@@ -1,7 +1,5 @@
 package ita.springboot.application.model;
 
-import org.hibernate.annotations.Cascade;
-
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.HashSet;
@@ -15,6 +13,8 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Version
+    private long version;
     private String firstName;
     private String lastName;
     private String email;
